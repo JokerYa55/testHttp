@@ -13,6 +13,7 @@ import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
+import org.json.simple.JSONArray;
 import org.json.simple.parser.ParseException;
 import sso_b2b.util_b2b.tokenUtil;
 
@@ -34,6 +35,7 @@ public class restResource {
     @Path("/test")
     @GET
     public Response test() {
+        JSONArray arr;
         try {
             tokenUtil utl = new tokenUtil("");
             return Response.status(Response.Status.OK).build();
