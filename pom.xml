@@ -5,6 +5,15 @@
     <artifactId>test_http</artifactId>
     <version>1</version>
     <packaging>jar</packaging>
+    
+    <repositories>
+        <repository>
+            <id>localrep</id>
+            <name>local repository</name>
+            <url>file:${project.basedir}/lib</url>
+        </repository>
+    </repositories>
+    
     <dependencies>
         <dependency>
             <groupId>org.glassfish.grizzly</groupId>
