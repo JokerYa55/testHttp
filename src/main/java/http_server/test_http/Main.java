@@ -5,12 +5,8 @@
  */
 package http_server.test_http;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URI;
-import java.util.Properties;
 import java.util.logging.Logger;
 
 import org.glassfish.grizzly.http.server.HttpServer;

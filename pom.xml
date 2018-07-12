@@ -57,8 +57,8 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>sso_b2b.adminrest_b2b_micro.Main</mainClass>
-                            <packageName>sso_b2b.adminrest_b2b_micro</packageName>
+                            <mainClass>http_server.test_http.Main</mainClass>
+                            <packageName>http_server.test_http</packageName>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
                         </manifest>

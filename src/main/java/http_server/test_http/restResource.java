@@ -13,6 +13,7 @@ import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
+import org.json.simple.parser.ParseException;
 import sso_b2b.util_b2b.tokenUtil;
 
 /**
@@ -36,7 +37,7 @@ public class restResource {
         try {
             tokenUtil utl = new tokenUtil("");
             return Response.status(Response.Status.OK).build();
-        } catch (Exception e) {
+        } catch (ParseException e) {
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).build();
         }
     }
